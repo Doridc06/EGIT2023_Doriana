@@ -3,8 +3,11 @@ public class Persona {
 
   public static void main(String[] args) {
     Persona p1 = new Persona("pepe", "Ruiz", 24);
+    Persona p2 = new Persona("kate", "Longl", 20);
     p1.cumpleaños();
+    p1.datosPersona("Kate", "Longl", 20);
     System.out.println(p1);
+    System.out.println(p2);
   }
   
   private String nombre;
@@ -24,6 +27,12 @@ public class Persona {
     return edad + 1;
   }
 
+  
+  public String datosPersona(String nombre, String apellidos, int edad) {
+    return nombre + apellidos + edad;
+    
+    
+  }
 
   @Override
   public String toString() {
